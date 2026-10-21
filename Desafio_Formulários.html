@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Pet Shop Amigo Animal</h1>
+    <h2>Formulário de Contato</h2>
+    <form action="https://formspree.io/f/mvkzevvw" method="POST">
+        <label for="nome">Nome do cliente:</label>
+        <input type="text" id="nome" name="nome" required>
+        <p></p>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        <p>Período de preferência:</p>
+            <label for="manha">Manhã</label>
+            <input type="radio" id="manha" name="periodo" value="manha">
+            <label for="tarde">Tarde</label>
+            <input type="radio" id="tarde" name="periodo" value="tarde">
+            <label for="noite">Noite</label>
+            <input type="radio" id="noite" name="periodo" value="noite">
+        <p>Serviços de interesse:</p>
+            <label for="banho">Banho</label>
+            <input type="checkbox" id="banho" name="servicos" value="banho">
+            <label for="tosa">Tosa</label>
+            <input type="checkbox" id="tosa" name="servicos" value="tosa">
+            <label for="veterinario">Veterinário</label>
+            <input type="checkbox" id="veterinario" name="servicos" value="veterinario">
+        <p>
+            <label for="animal">Tipo de animal:</label>
+                <select id="animal" name="animal">
+                    <option value="" selected disabled>Selecione</option>
+                    <option value="cao">Cão</option>
+                    <option value="gato">Gato</option>
+                    <option value="outro">Outro</option>
+                </select>
+        </p>
+        <p>
+            <label for="mensagem">Mensagem</label>
+        </p>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="40"></textarea>
+        <p>
+            <button type="submit">Enviar solicitação</buttom>
+            <button type="reset">Limpar</button>
+        </p>
+    </form>
+</body>
+
+</html>
